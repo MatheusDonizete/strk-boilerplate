@@ -1,0 +1,12 @@
+{
+    "icons": [{
+        "src": "https://connectall.co/assets/images/icon.png",
+        "sizes": "192x192"
+    }],
+    "display": "standalone",
+    "background_color": "#ff851b",
+    "name": "ConnectAll",
+    "short_name": "ConnectAll",
+    "description": "Telemetria na Web",
+    "start_url": "https://connectall.co/"
+}

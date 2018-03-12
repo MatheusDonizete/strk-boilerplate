@@ -1,0 +1,27 @@
+@import 'vars';
+* {
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--grey);    
+    margin-bottom: 1rem;
+}
+
+h2{
+    text-align: left;
+    color: var(--orange);
+}
+
+p{
+    text-align: justify;
+}

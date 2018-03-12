@@ -1,0 +1,61 @@
+@keyframes carousel {
+    0%, 10%, 73%, 100%   { 
+        transform: translateX(0); 
+    }
+
+    12%, 22%, 61%, 71% { 
+        transform: translateX(-100%); 
+    }
+
+    25%, 35%, 49%, 59%{
+        transform: translateX(-200%); 
+    }
+
+    37%, 47%{
+        transform: translateX(-300%); 
+    }
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateX(-100%); 
+    }
+
+    to{
+        transform: translateX(0); 
+    }
+}
+
+@keyframes fade-in-top {
+    from {
+        transform: translateY(-100%); 
+    }
+
+    to{
+        transform: translateY(0); 
+    }
+}
+
+.fade-in{
+    transition-property: transform;    
+    transition-timing-function: ease-in;
+    animation: fade-in 1s;  
+    animation-iteration-count: 1;
+    animation-delay: 300ms;
+}
+
+.fade-in-top{
+    animation: fade-in-top 1s;          
+}
+
+.carousel{
+    overflow: hidden;   
+    display: inline-block; 
+    img{
+        z-index: 0;
+        width: 20%;
+        transition-property: transform;    
+        transition-timing-function: ease-out;
+        animation: carousel 20s infinite;        
+    }
+}

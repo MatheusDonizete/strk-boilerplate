@@ -1,0 +1,55 @@
+@import 'vars';
+@mixin icon($path){    
+    width: 32px;
+    height: 32px;
+    background: url($path);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.icon-hardware{
+    @include icon('/assets/images/icons/hardware-icon.png');
+}
+
+.icon-software{
+    @include icon('/assets/images/icons/software-icon.png');
+}
+
+.icon-connect{
+    @include icon('/assets/images/icons/connect-icon.png');
+}
+
+.icon-phone{
+    @include icon('/assets/images/icons/phone-icon.png');
+}
+
+.icon-email{
+    @include icon('/assets/images/icons/email-icon.png');
+}
+
+.icon-invert{
+    filter: invert(100%);
+}
+
+.icon-radius{
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--orange);
+    border-radius: 100%;
+
+    .icon-email{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .icon-phone{
+        width: 4rem;
+        height: 4rem;   
+    }
+}
+
+.icon-bigger{    
+    width: 100%;
+    height: 8rem;
+}

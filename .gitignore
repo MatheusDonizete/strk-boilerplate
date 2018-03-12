@@ -1,3 +1,6 @@
+.DS_Store
+package-lock.json
+
 # Logs
 logs
 *.log
@@ -57,3 +60,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# rollup
+*.bundle.js
+public/assets/css/style.*

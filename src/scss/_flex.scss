@@ -1,0 +1,37 @@
+.flex-container{
+    display: flex;
+    padding: 1rem;
+}
+
+.flex-space-btw{
+    justify-content: space-between;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-column-r{
+    flex-direction: column-reverse;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-container > a.case-link{
+    position: absolute;
+}
+
+.align-center{
+    text-align: center;
+}
