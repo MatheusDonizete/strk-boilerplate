@@ -1,26 +1,32 @@
-.flex-container{
+.flex{
     display: flex;
-    padding: 1rem;
 }
 
-.flex-space-btw{
+.justify-between{
     justify-content: space-between;
 }
 
-.flex-row{
+.justify-around{
+    justify-content: space-around;
+}
+
+.row{
     flex-direction: row;
 }
 
-.flex-column{
+.col{
     flex-direction: column;
 }
 
-.flex-column-r{
+.col-r{
     flex-direction: column-reverse;
 }
 
-.flex-center{
-    justify-content: center;
+.justify-center{
+    justify-content: center;    
+}
+
+.align-center{
     align-items: center;
 }
 
@@ -28,10 +34,22 @@
     flex-wrap: wrap;
 }
 
-.flex-container > a.case-link{
-    position: absolute;
+.flex-nowrap{
+    flex-wrap: nowrap;
 }
 
-.align-center{
-    text-align: center;
+.col-1{
+    flex-grow: 1;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+
+.col-thirds .col-1{
+    width: 20%;
+}
+
+.col-thirds .col-2{
+    width: 66%;
 }

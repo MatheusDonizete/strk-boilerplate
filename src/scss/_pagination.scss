@@ -1,0 +1,7 @@
+.page-view, .page-view:target ~ .home-index{
+    display: none;
+}
+
+.page-view:target, .home-index {
+    display: block;
+}
